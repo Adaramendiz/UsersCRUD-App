@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-const useFetch = (baseUrl) => {
+const useFetch = (baseUrl, callBack) => {
   const [infoApi, setInfoApi] = useState();
 
   //? GET
@@ -21,6 +21,7 @@ const useFetch = (baseUrl) => {
       .then((res) => {
         console.log(res.data);
         setInfoApi([...infoApi, res.data]);
+        callBack(true)
       })
       .catch((err) => console.log(err));
   };
@@ -47,6 +48,7 @@ const useFetch = (baseUrl) => {
         console.log(res.data);
         const infoApiMapped = infoApi.map((e) => (e.id === id ? res.data : e));
         setInfoApi(infoApiMapped);
+        callBack(true)
       })
       .catch((err) => console.log(err));
   };
@@ -55,3 +57,5 @@ const useFetch = (baseUrl) => {
 };
 
 export default useFetch;
+
+
