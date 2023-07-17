@@ -1,14 +1,21 @@
+.container {
+  display: flex;
+  margin-left: 2vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .article__card {
   border: rgba(0, 0, 0, 0.101) solid 2px;
   border-radius: 5px;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
-  width: 340px;
-  height: 220px;
+  width: 370px;
+  height: 250px;
 }
 .article__card-title {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 .article__card-email-birthday {
   display: flex;
@@ -45,4 +52,16 @@
   border-radius: 5px;
   cursor: pointer;
   margin-left: 10px;
+}
+.user__btn {
+  position: absolute;
+  font-size: 1.2rem;
+  top: 3em;
+  right: 2em;
+  cursor: pointer;
+  width: 200px;
+  height: 35px;
+  background-color: #545987;
+  color: white;
+  border-radius: 0.2em;
 }

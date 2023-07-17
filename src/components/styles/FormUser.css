@@ -50,6 +50,8 @@
   padding: 0.4em 0.8em;
   border-radius: 0.5em;
   border: 0.1em solid #aaa;
+  background-color: #f9fafc; ;
+  
 }
 .formuser__btn {
   width: 100%;
@@ -57,7 +59,7 @@
   font-weight: 700;
   padding-top: 0.6em;
   padding-bottom: 0.6em;
-  background-color: rgb(22, 110, 218);
+  background-color: #545987;
   color: white;
   border-radius: 0.5em;
   margin-top: 1em;
