@@ -22,7 +22,7 @@ const UserCard = ({user, deleteUserById, setUpdateInfo, handleOpenForm}) => {
         </li>
         <li className='article__card-email-birthday'>
           <span className='article__card-birthday' >Birthday</span>
-          <span> <i class='bx bx-gift'></i> {user.birthday}</span>
+          <span> <i className='bx bx-gift'></i> {user.birthday}</span>
         </li>
       </ul>
       <hr />
